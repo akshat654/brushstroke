@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <ScrollView
+        android:id="@+id/scrollViewSignup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/AppTheme.WrapperStyle"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/name_layout"
+                    style="@style/AppTheme.Text.TextInputLayout"
+                    app:errorTextAppearance="@style/AppTheme.Text.ErrorText"
+                    app:hintTextAppearance="@style/AppTheme.Text.HintText">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/name"
+                        style="@style/AppTheme.EditText2"
+                        android:hint="@string/name_hint"
+                        android:inputType="textPersonName" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/email_layout"
+                    style="@style/AppTheme.Text.TextInputLayout"
+                    app:errorTextAppearance="@style/AppTheme.Text.ErrorText"
+                    app:hintTextAppearance="@style/AppTheme.Text.HintText">
+
+                    <EditText
+                        android:id="@+id/email"
+                        style="@style/AppTheme.EditText2"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/password_layout"
+                        style="@style/AppTheme.Text.TextInputLayout"
+                        app:errorTextAppearance="@style/AppTheme.Text.ErrorText"
+                        app:hintTextAppearance="@style/AppTheme.Text.HintText">
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:hint="Password"
+                            style="@style/AppTheme.EditText2.PasswordField" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/toggle_visibility"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        style="@style/AppTheme.VisibilityToggle"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="24dp" />
+
+                </RelativeLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/mobile_layout"
+                    style="@style/AppTheme.Text.TextInputLayout"
+                    app:errorTextAppearance="@style/AppTheme.Text.ErrorText"
+                    app:hintTextAppearance="@style/AppTheme.Text.HintText">
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        style="@style/AppTheme.EditText2"
+                        android:hint="@string/mobile_hint"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/street_layout"
+                    style="@style/AppTheme.Text.TextInputLayout"
+                    app:errorTextAppearance="@style/AppTheme.Text.ErrorText"
+                    app:hintTextAppearance="@style/AppTheme.Text.HintText">
+
+                    <EditText
+                        android:id="@+id/street"
+                        style="@style/AppTheme.EditText2"
+                        android:hint="@string/street_hint"
+                        android:inputType="textPostalAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Space
+                        android:id="@+id/centerAlignSpace"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/city_layout"
+                        style="@style/AppTheme.Text.TextInputLayout"
+                        android:layout_alignEnd="@+id/centerAlignSpace"
+                        android:layout_alignRight="@+id/centerAlignSpace"
+                        app:errorTextAppearance="@style/AppTheme.Text.ErrorText"
+                        app:hintTextAppearance="@style/AppTheme.Text.HintText">
+
+                        <EditText
+                            android:id="@+id/city"
+                            style="@style/AppTheme.EditText2"
+                            android:hint="@string/city_hint"
+                            android:inputType="textPostalAddress" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/pincode_layout"
+                        style="@style/AppTheme.Text.TextInputLayout"
+                        android:layout_alignTop="@+id/city_layout"
+                        android:layout_alignLeft="@+id/centerAlignSpace"
+                        android:layout_alignStart="@+id/centerAlignSpace"
+                        app:errorTextAppearance="@style/AppTheme.Text.ErrorText"
+                        app:hintTextAppearance="@style/AppTheme.Text.HintText">
+
+                        <EditText
+                            android:id="@+id/pincode"
+                            style="@style/AppTheme.EditText2"
+                            android:hint="@string/pincode_hint"
+                            android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/state_layout"
+                    style="@style/AppTheme.Text.TextInputLayout"
+                    app:errorTextAppearance="@style/AppTheme.Text.ErrorText"
+                    app:hintTextAppearance="@style/AppTheme.Text.HintText">
+
+                    <EditText
+                        android:id="@+id/state"
+                        style="@style/AppTheme.EditText2"
+                        android:hint="@string/state_hint"
+                        android:inputType="textPostalAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@color/background_nav"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:alpha=".5"
+        android:gravity="right|center"
+        android:paddingRight="30dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:text="@string/button_text_register" />
+
+
+
+</FrameLayout>
