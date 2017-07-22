@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "27343203596",
+    "project_id": "firebase-brushstroke"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27343203596:android:d6a65a182aa07484",
+        "android_client_info": {
+          "package_name": "pilani.brushstroke"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27343203596-79cflrmr08rfnui89rt93e6ttujl0tfn.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "27343203596-q3640ml0g29pagc3vsr0falq7lpntf62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pilani.brushstroke",
+            "certificate_hash": "076cf8b5ef56c7b95636ddf2541d4f2f0b553f43"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjcFW7I2hgsG2bBtGAV7chJn7CyvYQHiU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
